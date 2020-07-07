@@ -1,0 +1,13 @@
+.order-div input {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.order-div button:hover {
+    box-shadow: 2px 2px 3px #c0c0c0;
+}
+
+.order-div input:focus {
+    box-shadow: 2px 2px 3px #c0c0c0;
+    border: none;
+}

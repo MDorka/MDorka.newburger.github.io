@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online rendelés</title>
+
+    <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/color.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/selectors.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/main.js">
+
+    <div id="colorDiv">
+        <div class="col-2"></div>
+        <div style="text-align: center;" class="container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="/Pages/real/Contact.html">
+                        <button type="button" class="btn btn-warning" style="color: brown;">
+                            <h6>Elérhetőség</h6>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="/Pages/real/Menu.html">
+                        <button type="button" class="btn btn-warning" style="color: brown;">
+                            <h6>Étel- és Italkínálatunk</h6>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="/Pages/real/Sales.html">
+                        <button type="button" class="btn btn-warning" style="color: brown;">
+                            <h6>Akciók</h6>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="/Pages/real/Order.html">
+                        <button type="button" class="btn btn-warning" style="color: brown;">
+                            <h6>Online rendelés</h6>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+</head>
+
+<body>
+    <h1>Rendelés</h1>
+
+    <div class="container" id="example3">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <form action="">
+
+                    <div class="formlabel">
+                        <h3>Személyes adatok</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Név*</label>
+                        <input type="text" name="name" class="form-control" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Telefonszám*</label>
+                        <input type="text" name="Telefonszám" class="form-control" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Email*</label>
+                        <input type="text" name="Email" class="form-control" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Cím*</label>
+                        <input type="text" name="Cím" class="form-control" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Megjegyzés</label>
+                        <input type="text" name="Megjegyzés" class="form-control">
+                    </div>
+
+                    <div class="formlabel">
+                        <h3>Hamburger</h3>
+                    </div>
+
+                    <select id="hamburgers" name="hamburgers" class="form-control">
+                        <option value="houseburger">House Burger 1.650Ft</option>
+                        <option value="crispyburger">Crispy Burger 1.450Ft</option>
+                        <option value="classicburger">Classic Burger 1.150Ft</option>
+                        <option value="fishburger">Fish Burger 1.150Ft</option>
+                        <option value="húsimádóburger">Húsimádó Burger 2.250Ft</option>
+                        <option value="vegaburger">Vega Burger 1.350Ft</option>
+                    </select>
+
+
+                    <div class="formlabel" style="padding-top: 20px;">
+                        <h3>Extra feltét</h3>
+                    </div>
+
+                    <div class="formfield">
+                        <input type="radio" name="Extra" />Dupla sajt (+200 Ft)<br />
+                        <input type="radio" name="Extra" />Dupla hús (+300 Ft)<br />
+                        <input type="radio" name="Extra" />Dupla sajt & hús (+450 Ft)<br />
+                        <input type="radio" name="Extra" />Dupla szósz (+150 Ft)<br />
+                    </div>
+
+                    <div class="form-group" style="padding-top: 20px;">
+                        <label for="">Mennyiség (db)</label>
+                        <input type="number" name="amount-input" class="form-control" value="1">
+                        <small class="form-text text-muted">
+                            Minimum 1, Maximum 10
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        Fizetendő: <span class="show-amount"> 0 </span> Ft
+                    </div>
+                    <button onclick="calcAmount()" type="button" class="btn btn-warning2">Megrendelés</button>
+                </form>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+
+    <script src="/lib/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/js/main.js"></script>
+
+</body>
+
+</html>
